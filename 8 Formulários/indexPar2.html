@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Elementos de um formulario</title>
+</head>
+<body>
+
+    <!-- para começar um formulario basta começar  utilizando a tag form  -->
+    <form> <!-- Em seguida vamos colocar os campos que queremos no formulario, podemos colocar outros atributos como placeholder-->
+            <input type="text" placeholder="Nome" maxlength="10">
+            <input type="email">
+            <input type="search"> <!-- pesquisa-->
+            <input type="url"> <!-- no navegador faz diferença nenhuma já nos telefones e tabletes o telechado fica diferente ou neste caso no teclado do celular parace o .com -->
+            <input type="number">
+            <input type="radio">
+            <input type="radio" name="minhaop">opção A <!-- colocando nomes iguais ele deixa os dois sendo a mesma coisa deixando selecionar apenas uma opção -->
+            <input type="radio" name="minhaop">opção B <!--se colocarmos nomes diferentes ele permite selecionar os dois -->
+            <input type="checkbox" name="check">opção A
+            <input type="checkbox" name="check">opção B
+            <input type="date">
+            <input type="time">
+            <input type="month">
+            <input type="week">
+            <input type="range" min="0" max="10">
+            <input type="color">
+            <input type="file">
+    </form> <!-- -->
+
+    <form>
+        <input type="input">
+        <input type="input">
+        <input type="input">
+
+        <input type="button" value="botão">
+        <input type="submit" value="botão"> <!-- envia os dados do campo input para o servidor -->
+        <input type="reset" value="apagar"> <!-- reiniciar o formulario  -->
+
+        <!-- alem de input temos outros elementos de formularios  -->
+        <select multiple=""> <!-- se colocarmos o atributo multiple podemos fazer ele selecionar mais de um segurando a tecla control-->
+            <option value="html"> HTML </option>
+            <option value="css"> CSS </option>
+            <option value="js">JavaScript</option>
+        </select> 
+
+        <input type="text" list="navegadores">
+        <datalist id="navegadores">
+            <option value="Internet Ex">
+            <option value="Chorminium"></option>
+            <option value="Firefox"></option>
+            <option value="Chorme"></option>
+            <option value="Opera"></option>
+            <option value="Safari"></option>
+        </datalist>
+    </form>
+<!-- caso tenhamos muitos campos podemos organizar com a tag fildset ou seja ela é um grupo de campos  -->
+    <form>
+    <fieldset>
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+    </fieldset>
+    <fieldset><!-- podemos colocar um titulo utilizando a tag legend -->
+        <legend>cadastro</legend>
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+    </fieldset>
+    </form>
+    <!-- outra muito utilizada é a tag label, label serve para colocar um nome para cada um dos campos  -->
+
+    <form>
+        <label for="name">Nome</label> <!-- ate aqui teve diferença nenhuma mais qual a parte especial da label acontece que se colocarmos um ID no nosso input podemos liguar este label com o input ultilizando a propriedade for, ou seja estou dizendo que este label e para o indentificador (ID) quando o usuario clicar no (label)nome ele da foco ao input   -->
+        <input type="text" id="name">
+    </form>
+
+    <!-- temos o output que é a saida de falores -->
+    <form oninput="x.value=parseInt(a.value)+parseInt(b.value)"><!-- como por exemplo posso ter um input a baixo  de range que vai de 0 a 100 e posso ter um input de numero normal que possamos colocar o numero que quisermos e podemos colocar que nosso output é para os campo id=a e id=b logo em seguida fomos na tag for e utilizamos o oniput como parte JS ou seja ele ira executar o que esta dentro do for cade vez que ouver uma entrada de dados nas tag input        -->
+        0<input type="range" id="a" value="50">100
+        <input type="number" id="b" value="50">
+        <output name="x" for="a b"></output><!-- x.value estou pegando o valor de x e ele sera igual ao valor do a + o valor de b como os inpit pegam o valor em formato de txt o parseInt trasnforma eles em int  -->
+    </form>
+</body>
+</html>

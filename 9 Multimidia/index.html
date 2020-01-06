@@ -1,0 +1,39 @@
+<img src="imagens/html5.png">
+
+<!-- Pode ser alterada as dimenções da imagem com width e height -->
+<!-- Um atributo muito importante é o "alt" ele descreve uma imagem  -->
+
+<img src="imagens/html5.png" alt="HTML5"> <!-- o alt da nome a imagem  -->
+
+<!-- a tag <figura> é utilizada para marcar uma ffoto, diagrama, ilustrações e etc. ajuda na semantica tambem   -->
+<!-- a tag <figura> pode receber a tag <figurecaption>  cria uma legenda para a imagem -->
+
+<figure>
+    <img src="imagens/html5.png" >
+    <figcaption> Figura q. - logo do html5</figcaption>
+</figure>
+<!-- deixa tipo com uma legenda -->
+
+<!-- tag audio -->
+<!-- a tag audio permite colocarmos um player para sons e musicas na nossa pagina -->
+
+<audio controls>
+    <source src="horse.ogg" type="audio/ogg">
+    <source src="hourse.mp3" type="audio/mpeg">
+    you browser does not suport the audio tag.
+</audio>
+
+<!-- o atributo controls  indica que os controles como play/pause, deve ser exibidos
+cada navegador suporta certos tipos de arquivos de audio, por isso é comum passarmos mais de uma tag <source>
+a tag source é onde indicamos o arquico a ser executado. caso o navegador não reconheça um tipo de arquivo, ele ira ler o proximo 
+o ouro atributos mutios usado são autoplay que faz a midia ser executada assim que for carrefada e o loop que indica se amidia deve reiniciar assim qque ele acaba de ser executado-->
+
+<!-- a tag <video> funciona da mesma maneira que a tag audio, com a diferenla que a taf tamebbem aceita os atributos width e height, assim como a tag img para que possamos definit largura e altura do video -->
+
+<video width="320" height="240 controls">
+    <source src="movie.mp4" type="video/mp4">
+    <source src="movie.ogg" type="video/ogg">
+</video>
+
+<!-- um atributo muito usado tambem pe o poster nele nos podemos passar o endeõ de uma imagem que sera exbida enquanto o cideo ccarrefa ou enquanto o usiario não der play  -->
+

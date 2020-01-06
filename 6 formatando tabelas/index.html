@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <title>Document</title>
+</head>
+<body>
+
+<table><!-- tabelas que tem linhas<tr> e dentro de linhas tem colunas<td> -->
+    <thead>
+        <tr>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+            <th>4</th>
+        </tr>
+    </thead><!-- fazendo isso efetuamos a separação o cabeçãlho do corpo -->
+    <tbody>
+        <tr>
+            <td rowspan="2">A</td> <!-- vamos usar a propriedade rowspan que indica quantas linhas vc quer que ele ocupe  -->
+            <td colspan="2">B</td> <!-- se quiser que ocupe duas colunas-->
+            <!-- tambem pode ser usada com os dois ficaria assim o A = <td colspan"2" rowspan="2"> A</td> ele acaba ocupando duas colunas e duas linhas " -->
+            <td>C</td> <!-- caso não tire esta coluna ele ira jogar o c para  a linha 4-->
+        </tr><tr>
+            <td>D</td>
+            <td>E</td>
+            <td>F</td> <!-- cada coluna acabou criando uma celula -->>
+        </tr>
+</tbody>
+</table>
+    
+</body>
+</html>
