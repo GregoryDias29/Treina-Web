@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+<!-- 
+*Block (bloco): elementos que ocupam a linha inteira, ou seja, o próximo elemento será jogado para a linha de baixo. Podemos definir a largura e altura desses elementos.
+*Inline (linha): elementos que seu tamanho depende do tamanho do conteúdo, então não podemos definir uma largura e altura para eles. Como não ocupam a linha inteira, o elemento seguinte será exibido na mesma linha caso haja espaço
+*Inline-Block: esse tipo especial é uma mistura do comportamento de linha e bloco. Tem o mesmo comportamento do Inline, com a diferença que podemos definir largura e altura.
+
+Essa caixa, da qual os elementos são compostos, possuem margens internas e externas (padding e margin), bordas (border) e o conteúdo (content).
+
+Para algumas propriedades do CSS também precisaremos trabalhar em apenas um dos lados da caixa. Imagine que a gente queira colocar uma borda apenas na parte de baixo da caixa, ou do lado direito. Para isso temos as direções top, right, bottom e left (essa ordem é importante saber. Imagine como a ordem de um ponteiro de relógio saindo do número 12).
+
+E por fim, temos as dimensões. Podemos alterar a largura (width) e altura (height) das caixas.
+ -->
+<style>
+h1{
+    /* display: block; */
+    color: #ffffff;
+    background-color:  #264968;
+    width: 400px; /*width - Define a largura do elemento. Definimos uma largura de 400px;*/
+    margin: 10px; /*margin - Define a margem externa do elemento. Definimos para 10px;*/
+    padding: 15px; /*padding - Define a margem interna do elemento. Definimos para 15px;*/
+    border: 5px solid #cecece; /*border - Define uma borda para o elemento. Neste exemplo colocamos uma espessura igual a 5px, estilo de borda sólida (linha contínua) e de cor cinza.*/
+}
+h2{
+    /* display: none; Caso a gente queira que o elemento não seja apresentado, passamos o valor none. */
+  color: #ffffff;
+  background-color: #264968;
+  width: 400px;
+  margin: 10px 20px 30px 40px;
+  padding: 15px 30px 45px 60px;
+  border: solid 5px #cecece;
+/* Conseguimos o mesmo efeito se alterarmos nosso CSS para: */
+  color: #ffffff;
+  background-color: #264968;
+  width: 400px;
+  margin-top: 10px; /*margin-top – Margem superior;*/
+  margin-right: 20px; /*margin-right – Margem direita;*/
+  margin-bottom: 30px; /*margin-bottom – Margem inferior;*/
+  margin-left: 40px; /*margin-left – Margem esquerda.*/
+  padding: 15px 30px 45px 60px;
+  border: solid 5px #cecece;
+}
+
+h3{
+    display: inline-block;
+}
+div {
+    background-color: #eee;
+    width: 50px;
+    height: 50px;
+    border: 1px dotted black;
+}
+/*
+div {
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    border-radius: 30px;
+}
+
+
+div{
+  width: 100%;
+} Imagine que a gente queira que uma div ocupe 100% da tela. Sem problemas. Basta colocarmos.
+
+div{
+  width: 100%;
+  max-width: 1200px;
+} Nosso layout poderia ficar estranho. Para isso, temos a possibilidade de passar um valor máximo para as dimensões de um elemento.
+max-width
+max-height
+min-width
+min-height
+
+
+Diferente da propriedade de borda, o outline não faz parte das dimensões de um elemento.
+
+A propriedade outline é um atalho para as seguintes propriedades:
+outline-color: cor da linha;
+outline-offset: distância da linha em relação à borda do elemento;
+outline-style: estilo da borda, como hidden(oculto), dashed(traços) e solid(linha contínua);
+outline-width: largura da linha da borda.
+
+*/
+</style>
+
+<h1>Treina Web</h1>
+
+
+<div>Treina Web</div>
+    
+</body>
+</html>
